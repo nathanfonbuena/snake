@@ -40,12 +40,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/scores', (req, res)=> {
-	console.log("Getting scores")
 	res.json(req.session.scores);
 })
 
 app.post('/score', (req, res)=> {
-	console.log("Savings scores");
 	req.session.scores.push(req.body.score);
 	req.session.save();
 	res.json(req.session.scores);

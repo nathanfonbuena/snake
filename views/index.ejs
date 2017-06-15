@@ -34,7 +34,10 @@
 		#high-scores{
 			text-align: left;
 		}
-
+		#score-display{
+			max-height:30vh;
+			overflow-y: scroll;
+		}
 	</style>
 </head>
 <body>
@@ -51,7 +54,7 @@
 				<p> 2. Pressing space bar will pause the game.</p>
 			</div>
 			<h1 class="border">Current Score is: <span id="score" class="yellow">0</span></h1>
-			<div class="border">
+			<div class="border" id="score-display">
 				<h3 ornage>Your High Scores</h3>
 				<ol id="high-scores">
 					
