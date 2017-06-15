@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			background:#fafafa;
+		}
+		canvas{
+			margin-top:2%;
+			border: 2px solid black;
+			-webkit-box-shadow: -1px 3px 13px 2px rgba(117,117,117,1);
+			-moz-box-shadow: -1px 3px 13px 2px rgba(117,117,117,1);
+			box-shadow: -1px 3px 13px 2px rgba(117,117,117,1);
+		}
+		.center-text{
+			text-align: center;
+		}
+		.border{
+			border:1px solid darkgray;
+			padding:15px; 
+			margin: 15px;	
+			-webkit-box-shadow: -1px 6px 9px -2px rgba(207,205,207,1);
+			-moz-box-shadow: -1px 6px 9px -2px rgba(207,205,207,1);
+			box-shadow: -1px 6px 9px -2px rgba(207,205,207,1);
+		}
+		.orange{
+			color:#fc4a1a;
+		}
+		.yellow{
+			color:#f7b733;
+		}
+		#high-scores{
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 center-text">
+			<h3 class="border orange">Welcome to Snake!</h3>
+			<canvas id="arena" height="500" width="500"></canvas>
+		</div>
+		<div class="col-md-4 center-text">
+			<h3 class="border orange">Directions</h3>
+			<div class="border">
+				<p> 1. Use arrow keys to move snake up, down, left, or right.</p>
+				<p> 2. Pressing space bar will pause the game.</p>
+			</div>
+			<h1 class="border">Current Score is: <span id="score" class="yellow">0</span></h1>
+			<div class="border">
+				<h3 ornage>Your High Scores</h3>
+				<ol id="high-scores">
+					
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts.js"></script>
+</body>
+</html>
